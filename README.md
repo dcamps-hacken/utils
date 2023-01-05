@@ -2,24 +2,12 @@
 
 ## SOLC-SELECT
 
-Display installed versions
-```
-solc-select versions
-```
-Prints available versions to install
-```
-solc-select install
-```
-Switch global version to 0.8.9
-```
-solc-select use 0.8.9		
-```
+`solc-select versions`: Display installed versions <br>
+`solc-select install`: Prints available versions to install <br>
+`solc-select use 0.8.9`: Switch global version to 0.8.9
 
 ## NODEJS
-Change version of node to 18.12.0
-```
-sudo n 18.12.0
-``` 
+`sudo n 18.12.0`: Change version of node to 18.12.0
 
 
 ## HARDHAT
@@ -111,74 +99,65 @@ slither . --filter-paths "openzeppelin" --exclude naming-convention,external-fun
 
 ## UBUNTU
 
-Alt + ImpPant + B			> reboot
-
+`Alt + ImpPant + B`: reboot
 
 ## GIT
-
+Clone repo 
+```
 git clone <url>
+```
+#### Manage cloned repo
+`git status`: What's going on <br>
+`git log`: Show history of the commits, hashes and comments <br>
+`git remote`: Show the name of the server linked to the repo (usually origin) <br>
+`git remote -v`: Shows the URL of the server linked to the repo <br>
+`git remote set-url origin <url-of-new-repo>`: Change the URL of the server linked to the repo <br>
+`git show -s`: Show current commit <br>
+`git show`:	Show current commit + changes <br>
+`git checkout -b <branch-name> 6e559cb`: Create a new branch at commit '6e559cb' and moves to it <br>
 
-git remote                                    > show the name of the server linked to the repo (usually origin)
-git remote -v                                 > shows the URL of the server linked to the repo 
-git remote set-url origin <url-of-new-repo>   > change the URL of the server linked to the repo
+#### Move among branches and commits 
+`git branch`: Show the branch you are currently working <br>
+`git branch -D <branch-name>`: Delete branch <br>
+`git checkout -b <branch-name>`: Create a new branch and moves to it <br>
+`git checkout <branch-name>`: Switch to another branch <br>
+`git checkout -b <branch-name> 6e559cb`: Create a new branch at commit '6e559cb' and moves to it <br>
 
-git add <filename>  > adds file to next commit
-git add .   > adds the whole directory
+#### Create a commit 
+`git add <filename>`: Add file to next commit <br>
+`git add .`: Add the whole directory to next commit <br>
+`git commit -m "description of the commit changes"`: Update local repository <br>
+`git commit -am "description of the commit changes"`: Add and commit all files <br>
+`git push`: Update Github servers from local repository <br>
+`git push --set-upstream origin <branch-name>`: Make a new local branch and push those changes since the server is not aware of this new branch
+`git pull`: Update local repository from Github servers <br>
 
-git commit -m "description of the commit changes"   > updates local repository
-git commit -am "description of the commit changes"  > add and commit all files
+#### Reverts
+`git revert <commit to revert>`: Revert a commit <br>
+`git reset --hard <commit-hash>`: Revert last commit <br>
+`git reset --hard origin/master`  <br>
 
-git show -s						> shows current commit
-git show						> shows current commit + changes
-
-git status   > what's going on
-
-git push    > update Github servers from local repository 
-
-git pull    > update local repository from Github servers
-
-git log     > shows history of the commits, hashes and comments
-
-git reset --hard <commit-hash>  > reverts last commit
-git reset --hard origin/master  
-
-git revert <commit to revert>
-
-Identify user:
+#### Identify user 
+```
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+```
 
-BRANCHING
-
-git branch      > shows the branch you are currently working
-git branch -D <branch-name>     > deletes the branch
-
-git checkout -b <branch-name>   		> create a new branch and moves to it
-git checkout -b <branch-name> 6e559cb		> create a new branch at commit '6e559cb' and moves to it
-git checkout <branch-name>      		> switch to another branch
-
-
-git merge <branch-name>     > merges current branch with main
-
-git push --set-upstream origin <branch-name>    > when we make a local branch and want to push those 
-                                                changes since the server is not aware of this new branch
-
-PULL REQUEST 
-
+#### Pull Request 
 Request to merge the current branch with the main > done through the GitHub web on the branch with changes
 => GitHub allows to set permissions and requests regarding mergings and changes
 
 
-MERGE CONFLICTS
+#### Merge
+`git merge <branch-name>`: Merge current branch with main
 
-Conflict between local change and servir change when we use a "git pull" 
-=> manual change + commit has to be done to fix it
-
+Conflict between local change and servir change when we use a `git pull` => manual change + commit has to be done to fix it
 e.g. 
-
+```
 a = 1
 // <<<<<<<<<<<< HEAD
 b = 2  => represents our local changes
 //=======
 b = 0  => represents server (remote) changes
 // >>>>>>>>>>>>>>>> 892382356374891714718 => numbes represent commit hash (unique identifier)
+```
