@@ -95,6 +95,10 @@ Exclude naming-convention and external function calls
 ```
 slither . --filter-paths "openzeppelin" --exclude naming-convention,external-function
 ```
+Flag to ignore compilation in Truffle
+```
+--truffle-ignore-compile
+```
 
 
 ## UBUNTU
