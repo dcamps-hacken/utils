@@ -1,16 +1,8 @@
-# git-commands
+# USEFUL COMMANDS
 
-## SOLC-SELECT
+## SOLIDITY FRAMEWORKS
 
-`solc-select versions`: Display installed versions <br>
-`solc-select install`: Prints available versions to install <br>
-`solc-select use 0.8.9`: Switch global version to 0.8.9
-
-## NODEJS
-`sudo n 18.12.0`: Change version of node to 18.12.0
-
-
-## HARDHAT
+### HARDHAT
 
 1. Install hardhat to current directory
 ```
@@ -25,21 +17,23 @@ yarn hardhat
 yarn add --dev @openzeppelin/contracts
 ```
 
-## TRUFFLE
+### TRUFFLE
 Install @openzeppelin/contracts
 ```
 npm install @openzeppelin/contracts
 ```
 
 
-## BROWNIE
+### BROWNIE
 
 eth-brownie package version of the npm:
 ```
 @openzeppelin-contracts
 ```
 
-## MYTHX
+## SECURITY ANALYZER TOOLS
+
+### MYTHX
 
 Install mythx-cli
 ```
@@ -50,7 +44,7 @@ api-key
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0ODE2OThjNi1jMzgyLTQ0MzMtOTE3My0wM2I3YzViNzhhZTciLCJpYXQiOjE2NjY4Nzc4MjYuMzU4LCJpc3MiOiJNeXRoWCBBdXRoIFNlcnZpY2UiLCJleHAiOjE5ODI0NTM4MjYuMzQyLCJ1c2VySWQiOiI2MmQ1M2E3YTVlYzQ5NDgwOTBjODQyYWEifQ.K7lCHnRXXDHRb7Aj3GsXghnHGwcnwLZ4HfYF_nDcL-Y
 ```
 
-### Run Mythx on Terminal 
+#### Run Mythx on Terminal 
 1. Go to project root folder
 
 2. Create a group and get the findings
@@ -79,9 +73,7 @@ mythx --api-key eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMzNiMjBhNC01NjR
 mythx --api-key eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMzNiMjBhNC01NjRlLTQ5NjItYTBlMy1hNzY2N2YyY2NmZjciLCJpYXQiOjE2NjkyMDgxMDQuNzcxLCJpc3MiOiJNeXRoWCBBdXRoIFNlcnZpY2UiLCJleHAiOjE5ODQ3ODQxMDQuNzUzLCJ1c2VySWQiOiI2MmQ1M2E3YTVlYzQ5NDgwOTBjODQyYWEifQ.sI7-9dyL7TTSO_x60bBvq5wu1uZ6UCD8zAnkVgRNr-k analysis report 02152048-ddba-4b21-a8fe-776e31209c2b
 ```
 
-
-
-## SLITHER
+### SLITHER
 
 Run slither on current project, excluding OZ
 ```
@@ -99,11 +91,16 @@ Flag to ignore compilation in Truffle
 ```
 --truffle-ignore-compile
 ```
+Run slither and print summary table
+```
+slither . --print human-summary
+```
 
+### SOLC-SELECT
 
-## UBUNTU
-
-`Alt + ImpPant + B`: reboot
+`solc-select versions`: Display installed versions <br>
+`solc-select install`: Prints available versions to install <br>
+`solc-select use 0.8.9`: Switch global version to 0.8.9
 
 ## GIT
 Clone repo 
@@ -165,3 +162,11 @@ b = 2  => represents our local changes
 b = 0  => represents server (remote) changes
 // >>>>>>>>>>>>>>>> 892382356374891714718 => numbes represent commit hash (unique identifier)
 ```
+
+## NODEJS
+`sudo n 18.12.0`: Change version of node to 18.12.0
+
+
+## UBUNTU
+
+`Alt + ImpPant + B`: reboot
