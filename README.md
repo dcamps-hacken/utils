@@ -78,6 +78,11 @@ mythx --api-key eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMzNiMjBhNC01NjR
 mythx --api-key eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0ODE2OThjNi1jMzgyLTQ0MzMtOTE3My0wM2I3YzViNzhhZTciLCJpYXQiOjE2NjY4Nzc4MjYuMzU4LCJpc3MiOiJNeXRoWCBBdXRoIFNlcnZpY2UiLCJleHAiOjE5ODI0NTM4MjYuMzQyLCJ1c2VySWQiOiI2MmQ1M2E3YTVlYzQ5NDgwOTBjODQyYWEifQ.K7lCHnRXXDHRb7Aj3GsXghnHGwcnwLZ4HfYF_nDcL-Y analyze --mode deep --remap-import "@openzeppelin/=node_modules/@openzeppelin/" --remap-import "@gnosis.pm/=node_modules/@gnosis.pm/" contracts/ArtMarketplace/ArtMarketplace.sol
 ```
 
+8. Solidity Compilver version flag:
+```
+--solc-version TEXT 
+```
+
 ### SLITHER
 
 Run slither on current project, excluding OZ
