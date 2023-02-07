@@ -16,6 +16,10 @@ yarn hardhat
 ```
 yarn add --dev @openzeppelin/contracts
 ```
+In order to install a different OZ version use:
+```
+yarn add --dev @openzeppelin/contracts@v3.2.0
+```
 
 ### TRUFFLE
 Install @openzeppelin/contracts
