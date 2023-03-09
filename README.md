@@ -31,6 +31,10 @@ Run tests: <br>
 1. Open new terminal in VSCode and run `ganache`
 2. In VSCode terminal write `truffle tests --network <network-name>`
 
+Run coverage: <br>
+1. Install compatible solidity-coverage with `run install solidity-coverage@0.7.22`
+2. Add plugin into `truffle-config.js` as `plugins: ['solidity-coverage'],`
+3. Run `truffle run coverage`
 
 ### BROWNIE
 
