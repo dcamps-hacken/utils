@@ -27,6 +27,10 @@ Install @openzeppelin/contracts
 npm install @openzeppelin/contracts
 ```
 
+Run tests: <br>
+1. Open new terminal in VSCode and run `ganache`
+2. In VSCode terminal write `truffle tests --network <network-name>`
+
 
 ### BROWNIE
 
