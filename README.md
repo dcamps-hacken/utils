@@ -59,7 +59,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0ODE2OThjNi1jMzgyLTQ0MzMtOTE3My0
 #### Run Mythx on Terminal 
 1. Go to project root folder
 
-2. Create a group and get the findings
+2. Create a group and get the findings --> re-run the command once the analysis ended in order to get the results again (it will not compute all)
 ```
 mythx --api-key eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiMzNiMjBhNC01NjRlLTQ5NjItYTBlMy1hNzY2N2YyY2NmZjciLCJpYXQiOjE2NjkyMDgxMDQuNzcxLCJpc3MiOiJNeXRoWCBBdXRoIFNlcnZpY2UiLCJleHAiOjE5ODQ3ODQxMDQuNzUzLCJ1c2VySWQiOiI2MmQ1M2E3YTVlYzQ5NDgwOTBjODQyYWEifQ.sI7-9dyL7TTSO_x60bBvq5wu1uZ6UCD8zAnkVgRNr-k analyze --mode deep --remap-import "@openzeppelin/=node_modules/@openzeppelin/" --group-name "actafi-david" contracts
 ```
@@ -161,10 +161,12 @@ git clone <url>
 `git reset --hard origin/master`  <br>
 
 #### Identify user 
+In order to set the name and password globally <br>
+1- Use the folliwing command:
 ```
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+git config --global credential.helper cache
 ```
+2- Clone a repo and enter the name and github `token` --> they will be remain stored!
 
 #### Pull Request 
 Request to merge the current branch with the main > done through the GitHub web on the branch with changes
