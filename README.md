@@ -1,15 +1,6 @@
 ```
-bytes32[] memory roles = new bytes32[](2);
-roles[0] = ADMIN_ROLE;
-roles[1] = SUPERADMIN_ROLE;
-
-address officer = IManagerUpgradeable(manager).OFFICER();
-require(
-    IManagerUpgradeable(manager).hasRole(WITHDRAWER_ROLE, msg.sender) ||
-    IOfficerUpgradeable(officer).hasRoles(roles, msg.sender) ||
-    OraclePermission.has(manager, oraclePermission),
-    'no access'
-);
+require(!paused, 'vault paused');
+require(!IManagerUpgradeable(manager).profilePaused(), 'profile paused');
 ```
 
 
