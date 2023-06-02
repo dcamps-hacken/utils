@@ -8,6 +8,16 @@ if (dexType != 1 && dexType != 2) revert('unsupported dex');
 
 ## SOLIDITY FRAMEWORKS
 
+### SOLCOVER
+
+In order to skip files from coverage score, create a file `.colcover.js` with:
+```
+module.exports = {
+  skipFiles: ['<folder_name>']
+};
+```
+If this does not work at first, run `npx hardhat clean` before coverage
+
 ### HARDHAT
 
 1. Install hardhat to current directory
