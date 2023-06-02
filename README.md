@@ -1,9 +1,3 @@
-```
-uint256 dexType = IManagerUpgradeable(manager).DEX_TYPE();
-if (dexType != 1 && dexType != 2) revert('unsupported dex');
-```
-
-
 # USEFUL COMMANDS
 
 ## SOLIDITY FRAMEWORKS
