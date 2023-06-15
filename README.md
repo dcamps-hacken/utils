@@ -46,6 +46,23 @@ Run coverage: <br>
 2. Add plugin into `truffle-config.js` as `plugins: ['solidity-coverage'],`
 3. Run `truffle run coverage`
 
+### GANACHE
+Install globally:
+```
+npm install -g ganache
+```
+#### Run tests on mainnet:
+1. Fork ETH mainnet using Infura in working directory:
+```
+ganache-cli --fork https://mainnet.infura.io/v3/PUT_INFURA_KEY_HERE
+```
+2. In parallel, open a new terminal in working directory. Run console on forked mainnet:
+```
+yarn truffle console --network mainnet_fork
+```
+This will open a truffle console.
+3. In truffle console, run `test`
+
 ### BROWNIE
 
 eth-brownie package version of the npm:
