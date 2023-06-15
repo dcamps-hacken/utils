@@ -61,7 +61,7 @@ ganache-cli --fork https://mainnet.infura.io/v3/PUT_INFURA_KEY_HERE
 yarn truffle console --network mainnet_fork
 ```
 This will open a truffle console.
-3. In truffle console, run `test`
+<br> 3. In truffle console, run `test`
 
 ### BROWNIE
 
