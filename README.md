@@ -147,45 +147,43 @@ slither . --print human-summary
 
 ### SOLC-SELECT
 
-`solc-select versions`: Display installed versions <br>
-`solc-select install`: Prints available versions to install <br>
-`solc-select use 0.8.9`: Switch global version to 0.8.9
+- `solc-select versions`: Display installed versions <br>
+- `solc-select install`: Prints available versions to install <br>
+- `solc-select use 0.8.9`: Switch global version to 0.8.9
 
 ## GIT
-Clone repo 
-```
-git clone <url>
-```
+- `git clone <url>`: clone repo <br>
+
 #### Manage cloned repo
-`git status`: What's going on <br>
-`git log`: Show history of the commits, hashes and comments <br>
-`git remote`: Show the name of the server linked to the repo (usually origin) <br>
-`git remote -v`: Shows the URL of the server linked to the repo <br>
-`git remote set-url origin <url-of-new-repo>`: Change the URL of the server linked to the repo <br>
-`git show -s`: Show current commit <br>
-`git show`:	Show current commit + changes <br>
-`git checkout -b <branch-name> 6e559cb`: Create a new branch at commit '6e559cb' and moves to it <br>
+- `git status`: What's going on <br>
+- `git log`: Show history of the commits, hashes and comments <br>
+- `git remote`: Show the name of the server linked to the repo (usually origin) <br>
+- `git remote -v`: Shows the URL of the server linked to the repo <br>
+- `git remote set-url origin <url-of-new-repo>`: Change the URL of the server linked to the repo <br>
+- `git show -s`: Show current commit <br>
+- `git show`:	Show current commit + changes <br>
+- `git checkout -b <branch-name> 6e559cb`: Create a new branch at commit '6e559cb' and moves to it <br>
 
 #### Move among branches and commits 
-`git branch`: Show the branch you are currently working <br>
-`git branch -D <branch-name>`: Delete branch <br>
-`git checkout -b <branch-name>`: Create a new branch and moves to it <br>
-`git checkout <branch-name>`: Switch to another branch <br>
-`git checkout -b <branch-name> 6e559cb`: Create a new branch at commit '6e559cb' and moves to it <br>
+- `git branch`: Show the branch you are currently working <br>
+- `git branch -D <branch-name>`: Delete branch <br>
+- `git checkout -b <branch-name>`: Create a new branch and moves to it <br>
+- `git checkout <branch-name>`: Switch to another branch <br>
+- `git checkout -b <branch-name> 6e559cb`: Create a new branch at commit '6e559cb' and moves to it <br>
 
 #### Create a commit 
-`git add <filename>`: Add file to next commit <br>
-`git add .`: Add the whole directory to next commit <br>
-`git commit -m "description of the commit changes"`: Update local repository <br>
-`git commit -am "description of the commit changes"`: Add and commit all files <br>
-`git push`: Update Github servers from local repository <br>
-`git push --set-upstream origin <branch-name>`: Make a new local branch and push those changes since the server is not aware of this new branch
-`git pull`: Update local repository from Github servers <br>
+- `git add <filename>`: Add file to next commit <br>
+- `git add .`: Add the whole directory to next commit <br>
+- `git commit -m "description of the commit changes"`: Update local repository <br>
+- `git commit -am "description of the commit changes"`: Add and commit all files <br>
+- `git push`: Update Github servers from local repository <br>
+- `git push --set-upstream origin <branch-name>`: Make a new local branch and push those changes since the server is not aware of this new branch
+- `git pull`: Update local repository from Github servers <br>
 
 #### Reverts
-`git revert <commit to revert>`: Revert a commit <br>
-`git reset --hard <commit-hash>`: Revert last commit <br>
-`git reset --hard origin/master`  <br>
+- `git revert <commit to revert>`: Revert a commit <br>
+- `git reset --hard <commit-hash>`: Revert last commit <br>
+- `git reset --hard origin/master`  <br>
 
 #### Identify user 
 In order to set the name and password globally <br>
