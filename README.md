@@ -215,7 +215,11 @@ b = 0  => represents server (remote) changes
 ```
 
 ## NODEJS
-`sudo n 18.12.0`: Change version of node to 18.12.0
+use `nvm` --> download via `homebrew` <br>
+- `nvm ls`: get the list of downloaded versions <br>
+- `nvm use <version>` : use a specific version <br>
+- `nvm install <version>` : install and use specific version
+
 
 
 ## UBUNTU
