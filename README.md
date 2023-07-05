@@ -4,7 +4,7 @@
 
 ### SOLCOVER
 
-In order to skip files from coverage score, create a file `.colcover.js` with:
+In order to skip files from coverage score, create a file `.solcover.js` with:
 ```
 module.exports = {
   skipFiles: ['<folder_name>']
