@@ -10,7 +10,7 @@ module.exports = {
   skipFiles: ['<folder_name>']
 };
 ```
-If this does not work at first, run `npx hardhat clean` before coverage
+If this does not work at first, run `npx hardhat clean` before coverage --> `yarn` may be needed
 
 ### HARDHAT
 
