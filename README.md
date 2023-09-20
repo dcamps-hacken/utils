@@ -10,7 +10,15 @@ module.exports = {
   skipFiles: ['<folder_name>']
 };
 ```
-If this does not work at first, run `npx hardhat clean` before coverage --> `yarn` may be needed
+If this does not work at first, run `npx hardhat clean` before coverage --> `yarn` may be needed <br>
+
+When there is `stack too deep` problem, create a `.solcover.js` file with the following:
+```
+module.exports = {
+  configureYulOptimizer: true
+};
+```
+
 
 ### HARDHAT
 
