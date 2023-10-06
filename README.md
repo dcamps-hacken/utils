@@ -19,6 +19,15 @@ module.exports = {
 };
 ```
 
+### FOUNDRY
+
+New project:
+```
+forge install
+forge build
+forge coverage
+```
+
 
 ### HARDHAT
 
