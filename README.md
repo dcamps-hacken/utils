@@ -152,6 +152,22 @@ Run slither and print summary table
 ```
 slither . --print human-summary
 ```
+Foundry run with remaps and filters:
+```
+slither . --solc-remaps "@openzeppelin/=lib/openzeppelin-contracts/contracts/ solady/=lib/solady @openzeppelin-contracts/=lib/openzeppelin-contracts/"
+```
+Config file can be set as `slither.config.json` in root folder:
+```
+{
+  "filter_paths": "lib|test|script|openzeppelin|openzeppelin-contracts|solady",
+  "solc_remaps": [
+    "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "solady/=lib/solady/"
+  ]
+}
+```
+
 
 ### SOLC-SELECT
 
