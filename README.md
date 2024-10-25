@@ -1,5 +1,11 @@
 # USEFUL COMMANDS
 
+Count LOC:
+```
+cloc --by-file --include-lang=Solidity . //count al solidity files
+cloc --by-file --include-lang=Solidity --exclude-dir=_mocks,interfaces . //exclude some folders
+```
+
 ## SOLIDITY FRAMEWORKS
 
 ### SOLCOVER
