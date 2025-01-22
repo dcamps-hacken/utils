@@ -1,5 +1,11 @@
 # USEFUL COMMANDS
 
+Run specific test in Foundry:
+```
+forge test --match-test <test-name>
+```
+
+
 Count LOC:
 ```
 cloc --by-file --include-lang=Solidity . //count al solidity files
