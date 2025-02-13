@@ -1,9 +1,9 @@
 # USEFUL COMMANDS
 
 ## Update Github Token:
-1. Go to terminal and type
+1. Go to terminal and type the following (this will store the credentials when a new git operation is performed):
 ```
-git config --global credential.helper store //this will store the credentials when a new git operation is performed
+git config --global credential.helper store
 ```
 2. Clone a repo so that credentials are stored --> introduce new credentials
 
