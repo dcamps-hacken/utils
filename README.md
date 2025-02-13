@@ -1,5 +1,12 @@
 # USEFUL COMMANDS
 
+## Update Github Token:
+1. Go to terminal and type
+```
+git config --global credential.helper store //this will store the credentials when a new git operation is performed
+```
+2. Clone a repo so that credentials are stored --> introduce new credentials
+
 Run specific test in Foundry:
 ```
 forge test --match-test <test-name>
