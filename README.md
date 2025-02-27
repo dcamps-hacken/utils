@@ -15,6 +15,7 @@ forge test --match-test <test-name>
 
 Count LOC:
 ```
+FOUNDRY_FMT_LINE_LENGTH=80 forge fmt . //format files
 cloc --by-file --include-lang=Solidity . //count al solidity files
 cloc --by-file --include-lang=Solidity --exclude-dir=_mocks,interfaces . //exclude some folders
 ```
