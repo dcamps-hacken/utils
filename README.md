@@ -18,6 +18,7 @@ Count LOC:
 FOUNDRY_FMT_LINE_LENGTH=80 forge fmt . //format files
 cloc --by-file --include-lang=Solidity . //count al solidity files
 cloc --by-file --include-lang=Solidity --exclude-dir=_mocks,interfaces . //exclude some folders
+cloc --fullpath --include-ext=sol ./* --by-file --not-match-d="(interface|uniswap|openzeppelin|curve|mock|test|mock)"
 ```
 
 ## SOLIDITY FRAMEWORKS
