@@ -13,7 +13,7 @@ forge test --match-test <test-name>
 ```
 Format contracts:
 ```
-FOUNDRY_FMT_LINE_LENGTH=80 forge fmt . //format files
+FOUNDRY_FMT_LINE_LENGTH=80 forge fmt .
 ```
 
 Count LOC:
