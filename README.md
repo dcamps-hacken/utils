@@ -84,6 +84,15 @@ Run coverage: <br>
 2. Add plugin into `truffle-config.js` as `plugins: ['solidity-coverage'],`
 3. Run `truffle run coverage`
 
+### YARN
+Change version
+```
+yarn policies set-version <version number>
+```
+
+
+
+
 ### GANACHE
 Install globally:
 ```
