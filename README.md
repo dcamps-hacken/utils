@@ -281,6 +281,11 @@ use `nvm` --> download via `homebrew` <br>
 - `nvm use <version>` : use a specific version <br>
 - `nvm install <version>` : install and use specific version
 
+### YARN
+Change version
+```
+yarn policies set-version <version number>
+```
 
 
 ## UBUNTU
