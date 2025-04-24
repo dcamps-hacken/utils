@@ -48,7 +48,15 @@ forge install
 forge build
 forge coverage
 ```
-
+Install openzeppelin:
+```
+forge install OpenZeppelin/openzeppelin-contracts-upgradeable
+forge install OpenZeppelin/openzeppelin-contracts
+```
+Create remappings:
+```
+forge remappings > remappings.txt
+```
 
 ### HARDHAT
 
