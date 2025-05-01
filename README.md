@@ -20,6 +20,13 @@ Count LOC:
 ```
 cloc --fullpath --include-ext=sol ./* --by-file --not-match-d="(interface|uniswap|openzeppelin|curve|mock|test|mock)"
 ```
+Count LOC excluding filenames with `.t.` in them:
+```
+cloc --fullpath --include-ext=sol . \
+  --by-file \
+  --not-match-d='(interface|uniswap|openzeppelin|curve|mock|test|mock)' \
+  --not-match-f='\.t\.'
+```
 
 ## SOLIDITY FRAMEWORKS
 
