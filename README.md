@@ -5,7 +5,7 @@
 ```
 git config --global credential.helper store
 ```
-2. Clone a repo so that credentials are stored --> introduce new credentials: `github > settings > personal access tokens (classic)`
+2. Clone a repo so that credentials are stored --> introduce new credentials: `github > settings > developer settings > personal access tokens (classic)`
 
 Run specific test in Foundry:
 ```
