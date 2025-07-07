@@ -46,6 +46,10 @@ module.exports = {
   configureYulOptimizer: true
 };
 ```
+open LCOV viewer from CLI:
+```
+open coverage/lcov-report/index.html
+```
 
 ### FOUNDRY
 
