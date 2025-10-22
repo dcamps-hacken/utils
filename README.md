@@ -69,6 +69,11 @@ Create remappings:
 forge remappings > remappings.txt
 ```
 
+FORK TEST:
+```
+forge test --fork-url "https://bnb-mainnet.g.alchemy.com/v2/AlchemyKey" 
+```
+
 ### HARDHAT
 
 1. Install hardhat to current directory
